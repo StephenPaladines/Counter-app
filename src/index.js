@@ -1,12 +1,24 @@
-import React from "react";
+import React from "react"; // Enables JSX to work
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import App from "./jokes/App";
+import MyInfo from "./components/MyInfo";
+import Counters from "./components/counter";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
-import Counter from "./components/counter";
 
-ReactDOM.render(<Counter />, document.getElementById("root"));
+function MyApp() {
+  return (
+    <ul>
+      <li>Stop</li>
+      <li>Right</li>
+      <li>There</li>
+    </ul>
+  );
+}
+
+// JSX to interpret HTML
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
