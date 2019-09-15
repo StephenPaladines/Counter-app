@@ -1,7 +1,7 @@
 import React from "react"; // Enables JSX to work
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./jokes/App";
+import App from "./statePractice/App2";
 import MyInfo from "./components/MyInfo";
 import Counters from "./components/counter";
 import * as serviceWorker from "./serviceWorker";

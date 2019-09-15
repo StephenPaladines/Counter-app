@@ -1,10 +1,13 @@
 import React from "react";
 
 function Jokes(props) {
+  console.log(props);
   return (
     <div>
-      {props.jokes.joke ? <span>Joke: {props.jokes.joke} </span> : null}
-      <span> Punchline: {props.jokes.pun}</span>
+      {props.joke && <span>Joke: {props.joke} </span>}
+      <span style={{ color: !props.joke && "red" }}>
+        Punchline: {props.pun}
+      </span>
     </div>
   );
 }
