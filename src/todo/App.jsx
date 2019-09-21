@@ -8,11 +8,25 @@ class App extends React.Component {
     this.state = {
       todos: todoData
     };
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(id) {
+    console.log("Changed", id);
+    this.setState(prevState => {
+      const updateTodo = prevState.todos.map(todo => {
+        if (todo.id === id) todo.checked = !todo.checked;
+        return todo;
+      });
+      return {
+        todos: updateTodo
+      };
+    });
   }
 
   render() {
     const todoComponent = this.state.todos.map(todo => {
-      return <Todo key={todo.id} task={todo.task} />;
+      return <Todo key={todo.id} item={todo} function={this.handleChange} />;
     });
 
     return <div>{todoComponent}</div>;
@@ -20,5 +34,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-// Stopped at 2:21:00
