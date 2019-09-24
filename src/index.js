@@ -1,12 +1,11 @@
 import React from "react"; // Enables JSX to work
 import ReactDOM from "react-dom";
-// import App from "./events/App2";
-import App from "./condRendering/App";
+import App from "./memeGenerator/App";
 import MyInfo from "./components/MyInfo";
 import Counters from "./components/counter";
 import * as serviceWorker from "./serviceWorker";
-import "bootstrap/dist/css/bootstrap.css";
-import "./index.css";
+// import "bootstrap/dist/css/bootstrap.css";
+// import "./index.css";
 
 function MyApp() {
   return (
