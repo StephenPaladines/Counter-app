@@ -1,18 +1,17 @@
 h1 {
-  margin-right: 50%;
-  margin-left: 50%;
-  width: 2000px;
+  margin: 0px;
+  text-align: center;
 }
 
-.test {
-  width: 450px;
+.page-body {
+  height: 100%;
+  width: 100%;
 }
 
 .page-header {
   font-size: 20px;
-  width: auto;
-  height: 200px;
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
+  margin: 10px 0%;
 }
 
 .footer-page {
@@ -22,47 +21,41 @@ h1 {
 }
 
 .container {
-  /* margin-left: 50%;
-  margin-right: 50%; */
-  background-color: red;
-}
-
-.img-container {
-  position: relative;
-  /* left: 50%; */
   width: 400px;
-  height: 400px;
+  margin: 0 auto;
+  position: relative;
 }
 
+.image {
+  position: relative;
+}
 .inputs {
-  display: inline;
-  background-color: aquamarine;
-}
-
-#image {
   width: 100%;
 }
 
-#upperText {
-  position: absolute;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-  color: yellow;
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 40px;
-  top: 0%;
-  left: 25%;
+.text-input {
+  width: 198px;
+  padding: 0%;
+  margin-bottom: 5px;
 }
 
-#lowerText {
+.page-button {
+  width: 100%;
+}
+
+#upperText-label,
+#lowerText-label {
   position: absolute;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
-  color: yellow;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font: bold 40px sans-serif;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 15%;
+}
+
+#lowerText-label {
   top: 75%;
-  left: 25%;
 }

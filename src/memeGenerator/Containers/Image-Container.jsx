@@ -16,9 +16,6 @@ const ImageContainer = () => {
   };
 
   const handleChange = event => {
-    // console.log(event.target);
-    // Object destructuring
-    //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring
     const { name, value } = event.target;
     return setInputText(prevState => ({
       ...prevState, // Preserves the keys of the state
